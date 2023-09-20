@@ -2,23 +2,49 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wave="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.inkbird.recyclerdemo.MyTextView
-        android:layout_width="wrap_content"
+    <com.inkbird.recyclerdemo.MarqueeTextView
+        android:id="@+id/marqueeView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="1dp"
-        app:my_text="吴sdglj"
-        app:my_textColor="#000000"
-        app:my_textSize="20sp" />
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Probe temperature too high!"
+        android:textColor="#ff0000"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="吴sdglj"
-        android:textSize="20sp" />
+        android:max="100"
+        android:min="0" />
+
+    <com.inkbird.recyclerdemo.waveprogress.WaveView
+        android:id="@+id/wave_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:above_wave_end_color="@color/color_FF9844"
+        app:blow_wave_end_color="@color/color_FF9844"
+        app:blow_wave_start_color="@color/color_F37813"
+        wave:above_wave_start_color="@color/color_F37813"
+        wave:progress="0"
+        wave:wave_height="large"
+        wave:wave_hz="fast"
+        wave:wave_length="large" />
 
 </LinearLayout>

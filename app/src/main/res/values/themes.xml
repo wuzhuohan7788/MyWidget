@@ -24,4 +24,12 @@
         <attr name="loadSpeed" format="integer" />
         <attr name="lineWidth" format="dimension" />
     </declare-styleable>
+
+    <declare-styleable name="MyWaveView">
+        <attr name="wavecolor" format="color" /> <!--view颜色-->
+        <attr name="fillstyle" format="boolean" /><!--Paint的填充风格-->
+        <attr name="space" format="integer" /><!--每个圆形间距-->
+        <attr name="width" format="integer" /><!--扩散的宽度-->
+    </declare-styleable>
+
 </resources>

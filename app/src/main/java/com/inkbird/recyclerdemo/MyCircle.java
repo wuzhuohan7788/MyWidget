@@ -1,9 +1,17 @@
-package com.inkbird.recyclerdemo;
+package per.lijuan.circleprogress;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Point;
+import android.graphics.RectF;
+import android.graphics.Typeface;
+import android.text.TextPaint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
