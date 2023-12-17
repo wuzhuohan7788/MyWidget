@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerDemo">
         <activity
-            android:name=".strackList.StrackListDemoActivity"
-            android:exported="true" >
+            android:name=".rulerview.RulerViewActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
