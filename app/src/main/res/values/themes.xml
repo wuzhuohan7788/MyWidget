@@ -25,6 +25,15 @@
         <attr name="lineWidth" format="dimension" />
     </declare-styleable>
 
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
     <declare-styleable name="MyWaveView">
         <attr name="wavecolor" format="color" /> <!--view颜色-->
         <attr name="fillstyle" format="boolean" /><!--Paint的填充风格-->
@@ -32,4 +41,5 @@
         <attr name="width" format="integer" /><!--扩散的宽度-->
     </declare-styleable>
 
+    <color name="transparent">#00ffffff</color>
 </resources>
